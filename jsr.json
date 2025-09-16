@@ -1,12 +1,12 @@
 {
   "name": "@arpan/threads",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "license": "MIT",
   "imports": {
     "@/": "./src/"
   },
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/routes/index.ts"
   },
   "exclude": [".github", ".vscode", "pnpm-lock.yaml"]
 }

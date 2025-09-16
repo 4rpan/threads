@@ -34,7 +34,6 @@ import { createThreadInSpace } from "./thread/$id/post";
  * @property thread 'Thread lifecycle, servers, posts in a thread'
  * @property post 'Single posts, versions, meta interactions'
  * @property sync 'Server-to-server replication & consensus'
- * @property extra 'Optional/utility endpoints'
  */
 const routes = {
   /**
