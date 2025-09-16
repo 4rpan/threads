@@ -22,7 +22,7 @@ export const getThreadServers = oc
          * - space endpoints aren't exposed for thread members as it's personal
          * - examples:
          *  - `https://original.founder.tld/space/xyz/thread/abc/`
-         *  - `https://thread.community.org/`
+         *  - `https://threads.community.org/abc`
          */
         root: "string[]",
         /**
