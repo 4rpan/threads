@@ -6,6 +6,7 @@ import { type } from "arktype";
 export const SpaceProps = type({
   id: "string",
   "parentSpaceId?": "string",
+  owner: "string",
   name: "string",
   "about?": "string",
   kind: "string",

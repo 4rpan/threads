@@ -1,5 +1,6 @@
 // models/post.ts
 import { type } from "arktype";
+import { FilterFields } from ".";
 
 /**
  * ArkType schema for a single Post Version.
@@ -26,4 +27,21 @@ export const PostProps = type({
   authors: "string[]", // authorized authors
   meta: "unknown", // server managed (views, reactions, ratings)
   versions: PostBody.array(), // ordered versions
+});
+
+export const PostFilters = type({
+  "...": FilterFields,
+  "unseen?": "boolean",
+  filterBy: "'id'| 'time' = 'time'",
+  /**
+   * on a specific day or between specific days
+   */
+  "day?": "number | number[]",
+  "time?": "number | number[]",
+  /**
+   * before/after/between specific post id
+   */
+  "before?": "string",
+  "after?": "string",
+  "between?": "string[]",
 });

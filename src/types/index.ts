@@ -1,8 +1,8 @@
 import { type } from "arktype";
 
-export { PostProps, PostBody } from "./post";
-export { ThreadProps } from "./thread";
-export { SpaceProps } from "./space";
+export * from "./post";
+export * from "./thread";
+export * from "./space";
 
 /**
  * Error Schema JSON payload
