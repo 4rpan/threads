@@ -1,9 +1,8 @@
-// models/post.ts
 import { type } from "arktype";
 import { FilterFields } from ".";
 
 /**
- * ArkType schema for a single Post Version.
+ * Schema for a single Post Version.
  */
 export const PostBody = type({
   author: "string", // must be in `post.authors`
@@ -18,14 +17,19 @@ export const PostBody = type({
 });
 
 /**
- * ArkType schema for a Post object (covers all versions).
+ * Schema for full Post object.
  */
 export const PostProps = type({
   space: "string", // space ID
   thread: "string", // thread ID
   id: "string", // post ID (UUIDv4, immutable)
   authors: "string[]", // authorized authors
-  meta: "unknown", // server managed (views, reactions, ratings)
+  meta: {
+    "views?": "number",
+    "reactions?": "Record<string, number>",
+    "averageRating?": "number",
+    "comments?": "string",
+  }, // server managed (views, reactions, ratings)
   versions: PostBody.array(), // ordered versions
 });
 
