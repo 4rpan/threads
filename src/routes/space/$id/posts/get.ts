@@ -13,7 +13,7 @@ import {
  * Supports cursor, day/time, before/after, between ranges, or unseen fetch.
  * @route GET /space/{id}/posts
  */
-export const listPosts = oc
+export const listPostsInSpace = oc
   .route({
     method: "GET",
     path: "/space/{id}/posts",

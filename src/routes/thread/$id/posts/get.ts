@@ -13,7 +13,7 @@ import {
  * Supports cursor, day/time, before/after, between ranges, or unseen fetch.
  * @route GET /thread/{id}/posts
  */
-export const listPosts = oc
+export const listPostsInThread = oc
   .route({
     method: "GET",
     path: "/thread/{id}/posts",

@@ -7,7 +7,7 @@ import { oc } from "@orpc/contract";
  * (new posts, versions, meta changes)
  * @route SSE /thread/{id}/events
  */
-export const getThreadEvents = oc.route({
+export const threadServerSentEvents = oc.route({
   method: "GET",
   path: "/thread/{id}/events",
   summary: "SSE endpoint for a thread",

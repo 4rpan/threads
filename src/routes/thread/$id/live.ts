@@ -8,7 +8,7 @@ import { ThreadProps } from "@/types";
  * (new posts, versions, meta changes).
  * @route WS /thread/{id}/live
  */
-export const getThreadLive = oc.route({
+export const threadWebSocket = oc.route({
   method: "GET",
   path: "/thread/{id}/live",
   summary: "WebSocket endpoint for a thread",
