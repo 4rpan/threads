@@ -1,5 +1,5 @@
 import { type } from "arktype";
-import { SpaceProps } from ".";
+import { SpaceProps } from "@/types";
 
 /**
  * **Thread** Body (object) schema.

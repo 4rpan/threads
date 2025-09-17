@@ -1,5 +1,5 @@
 import { type } from "arktype";
-import { FilterFields } from ".";
+import { FilterFields } from "@/types";
 
 /**
  * Schema for a single Post Version.
